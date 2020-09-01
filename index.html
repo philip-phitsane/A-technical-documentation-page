@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Technical Documentation page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>PYTHON DOCUMENTATION</header>
+        <ul>
+          <li><a class="nav-link" href="#History">History</a></li>
+          <li><a class="nav-link" href="#Python_programming_examples">Python programming examples</a></li>
+        <li><a class="nav-link" href="#Libraries">Libraries</a></li>
+        <li><a class="nav-link" href="#Development">Development</a></li>
+        <li><a class="nav-link" href="#Naming">Naming</a></li>
+          <li><a class="nav-link" href="#Uses">Uses</a></li>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+      </nav>
+      
+      <main id="main-doc">
+        <section id="History" class="main-section">
+          <header>History</header>
+          <article>
+          <p>Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC language (itself inspired by SETL), capable of exception handling and interfacing with the Amoeba operating system. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his "permanent vacation" from his responsibilities as Python's Benevolent Dictator For Life, a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker. He now shares his leadership as a member of a five-person steering council. In January 2019, active Python core developers elected Brett Cannon, Nick Coghlan, Barry Warsaw, Carol Willing and Van Rossum to a five-member "Steering Council" to lead the project.
+            </p>
+            <p>
+      Python 2.0 was released on 16 October 2000 with many major new features, including a cycle-detecting garbage collector and support for Unicode.
+            </p>
+            <p>
+      Python 3.0 was released on 3 December 2008. It was a major revision of the language that is not completely backward-compatible. Many of its major features were backported to Python 2.6.x and 2.7.x version series. Releases of Python 3 include the 2to3 utility, which automates (at least partially) the translation of Python 2 code to Python 3.
+            </p>
+            <p>
+      Python 2.7's end-of-life date was initially set at 2015 then postponed to 2020 out of concern that a large body of existing code could not easily be forward-ported to Python 3.</p>
+          </article>
+        </section>
+        <section id="Python_programming_examples" class="main-section">
+          <header>Python programming examples</header>
+          <article>
+          <p>Hello world program:</p>
+          <p>
+            <code>print('Hello, world')</code><br><br>Program to calculate the factorial of a positive integer:<br><br><code>n = int(input('Type a number and its factorial will be printed: ')) </code>
+            <br><br>
+            <code>if n < 0: <br> raise ValueError('You must enter a positive integer')</code>
+          </p>
+            <code>fact = 1<br>i = 2<br>while i <= n:<br>fact *= i<br>i += 1</code><br><br><code>print(fact)</code>
+            </p>
+          </article>
+        </section>
+        <section id="Libraries" class="main-section">
+          <header>Libraries</header>
+          <article>
+          <p>Python's large standard library, commonly cited as one of its greatest strengths, provides tools suited to many tasks. For Internet-facing applications, many standard formats and protocols such as MIME and HTTP are supported. It includes modules for creating graphical user interfaces, connecting to relational databases, generating pseudorandom numbers, arithmetic with arbitrary-precision decimals, manipulating regular expressions, and unit testing.
+      <br><br>
+      Some parts of the standard library are covered by specifications (for example, the Web Server Gateway Interface (WSGI) implementation wsgiref follows PEP 333), but most modules are not. They are specified by their code, internal documentation, and test suites. However, because most of the standard library is cross-platform Python code, only a few modules need altering or rewriting for variant implementations.</p>
+          <p>As of November 2019, the Python Package Index (PyPI), the official repository for third-party Python software, contains over 200,000 packages with a wide range of functionality, including:
+          </p>
+          <ul>
+            <li>Automation</li>
+            <li>Data analytics</li>
+            <li>Databases</li>
+            <li>Documentation</li>
+            <li>Graphical user interfaces</li>
+            <li>Image processing</li>
+            <li>Machine learning</li>
+            <li>Mobile App</li>
+            <li>Multimedia</li>
+            <li>Networking</li>
+            <li>Scientific computing</li>
+            <li>System administration</li>
+      <li>Test frameworks</li>
+            <li>Text processing</li>
+            <li>Web frameworks</li>
+            <li>Web scraping</li>
+          </article>
+        </section>
+        <section id="Development" class="main-section">
+          <header>Development</header>
+          <article>
+          <p>Python's development is conducted largely through the Python Enhancement Proposal (PEP) process, the primary mechanism for proposing major new features, collecting community input on issues and documenting Python design decisions. Python coding style is covered in PEP 8. Outstanding PEPs are reviewed and commented on by the Python community and the steering council.
+            </p>
+            <p>
+      Enhancement of the language corresponds with development of the CPython reference implementation. The mailing list python-dev is the primary forum for the language's development. Specific issues are discussed in the Roundup bug tracker hosted at bugs.python.org. Development originally took place on a self-hosted source-code repository running Mercurial, until Python moved to GitHub in January 2017.
+            </p>
+            <p>
+      CPython's public releases come in three types, distinguished by which part of the version number is incremented:</p>
+            <ul>
+              <li>Backward-incompatible versions, where code is expected to break and need to be manually ported. The first part of the version number is incremented. These releases happen infrequently—for example, version 3.0 was released 8 years after 2.0.</li>
+              <li>Major or "feature" releases, about every 18 months, are largely compatible but introduce new features. The second part of the version number is incremented. Each major version is supported by bugfixes for several years after its release.</li>
+              <li>Bugfix releases, which introduce no new features, occur about every 3 months and are made when a sufficient number of bugs have been fixed upstream since the last release. Security vulnerabilities are also patched in these releases. The third and final part of the version number is incremented.</li>
+          <p>Python 3.9 alpha1 was announced in November 2019 and with the adoption of a new yearly release cadence, the first release of 3.9 is slated for November 2020.
+              </p>
+              <p>
+      Many alpha, beta, and release-candidates are also released as previews and for testing before final releases. Although there is a rough schedule for each release, they are often delayed if the code is not ready. Python's development team monitors the state of the code by running the large unit test suite during development, and using the BuildBot continuous integration system.
+              </p>
+              <p>
+      The major academic conference on Python is PyCon. There are also special Python mentoring programmes, such as Pyladies.</p>
+          </article>
+        </section>
+        <section id="Naming" class="main-section">
+          <header>Naming</header>
+          <article>
+          <p>Python's name is derived from the British comedy group Monty Python, whom Python creator Guido van Rossum enjoyed while developing the language. Monty Python references appear frequently in Python code and culture;  for example, the metasyntactic variables often used in Python literature are spam and eggs instead of the traditional foo and bar. The official Python documentation also contains various references to Monty Python routines.</p>
+            <p>The prefix Py- is used to show that something is related to Python. Examples of the use of this prefix in names of Python applications or libraries include Pygame, a binding of SDL to Python (commonly used to create games); PyQt and PyGTK, which bind Qt and GTK to Python respectively; and PyPy, a Python implementation originally written in Python.</p>
+          </article>
+        </section>
+        <section id="Uses" class="main-section">
+          <header>Uses</header>
+          <article>
+          <p>Since 2003, Python has consistently ranked in the top ten most popular programming languages in the TIOBE Programming Community Index where, as of February 2020, it is the third most popular language (behind Java, and C). It was selected Programming Language of the Year in 2007, 2010, and 2018.</p>
+          <p>An empirical study found that scripting languages, such as Python, are more productive than conventional languages, such as C and Java, for programming problems involving string manipulation and search in a dictionary, and determined that memory consumption was often "better than Java and not much worse than C or C++".</p>
+          <p>Large organizations that use Python include Wikipedia, Google, Yahoo!, CERN, NASA, Facebook, Amazon, Instagram, Spotify and some smaller entities like ILM and ITA. The social news networking site Reddit is written entirely in Python.</p>
+            <p>Python can serve as a scripting language for web applications, e.g., via mod_wsgi for the Apache web server. With Web Server Gateway Interface, a standard API has evolved to facilitate these applications. Web frameworks like Django, Pylons, Pyramid, TurboGears, web2py, Tornado, Flask, Bottle and Zope support developers in the design and maintenance of complex applications. Pyjs and IronPython can be used to develop the client-side of Ajax-based applications. SQLAlchemy can be used as data mapper to a relational database. Twisted is a framework to program communications between computers, and is used (for example) by Dropbox.</p>
+            <p>Libraries such as NumPy, SciPy and Matplotlib allow the effective use of Python in scientific computing, with specialized libraries such as Biopython and Astropy providing domain-specific functionality. SageMath is a mathematical software with a notebook interface programmable in Python: its library covers many aspects of mathematics, including algebra, combinatorics, numerical mathematics, number theory, and calculus.</p>
+            <p>Python has been successfully embedded in many software products as a scripting language, including in finite element method software such as Abaqus, 3D parametric modeler like FreeCAD, 3D animation packages such as 3ds Max, Blender, Cinema 4D, Lightwave, Houdini, Maya, modo, MotionBuilder, Softimage, the visual effects compositor Nuke, 2D imaging programs like GIMP, Inkscape, Scribus and Paint Shop Pro, and musical notation programs like scorewriter and capella. GNU Debugger uses Python as a pretty printer to show complex structures such as C++ containers. Esri promotes Python as the best choice for writing scripts in ArcGIS. It has also been used in several video games, and has been adopted as first of the three available programming languages in Google App Engine, the other two being Java and Go.</p>
+            <p>Python is commonly used in artificial intelligence projects and machine learning projects with the help of libraries like TensorFlow, Keras, Pytorch and Scikit-learn. As a scripting language with modular architecture, simple syntax and rich text processing tools, Python is often used for natural language processing.</p>
+            <p>Many operating systems include Python as a standard component. It ships with most Linux distributions, AmigaOS 4 (using Python 2.7), FreeBSD (as a package), NetBSD, OpenBSD (as a package) and macOS and can be used from the command line (terminal). Many Linux distributions use installers written in Python: Ubuntu uses the Ubiquity installer, while Red Hat Linux and Fedora use the Anaconda installer. Gentoo Linux uses Python in its package management system, Portage.</p>
+            <p>Python is used extensively in the information security industry, including in exploit development.</p>
+            <p>Most of the Sugar software for the One Laptop per Child XO, now developed at Sugar Labs, is written in Python. The Raspberry Pi single-board computer project has adopted Python as its main user-programming language.</p>
+            <p>LibreOffice includes Python, and intends to replace Java with Python. Its Python Scripting Provider is a core feature since Version 4.0 from 7 February 2013.</p>
+          </article>
+        </section>
+          <section id="Reference" class="main-section">
+            <header>Reference</header>
+            <p>This information was extracted from <a href="https://en.wikipedia.org/wiki/Python_(programming_language)#Python_programming_examples">wikipedia.</a></section>
+      </main>
+        
+</body>
+</html>
